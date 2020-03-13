@@ -12,6 +12,8 @@ namespace VigenereCipher
 {
     public partial class MainForm : Form
     {
+        private static string russianAlphabet = ""
+
         public MainForm()
         {
             InitializeComponent();
