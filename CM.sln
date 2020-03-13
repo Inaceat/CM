@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColumnarTransposition", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarCipher", "CaesarCipher\CaesarCipher.csproj", "{21862ADE-28F3-48AE-AE1D-79FD32D9D3E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VigenereCipher", "VigenereCipher\VigenereCipher.csproj", "{26169277-C67B-4B4E-B598-9CD7567B4DDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{21862ADE-28F3-48AE-AE1D-79FD32D9D3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21862ADE-28F3-48AE-AE1D-79FD32D9D3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21862ADE-28F3-48AE-AE1D-79FD32D9D3E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26169277-C67B-4B4E-B598-9CD7567B4DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26169277-C67B-4B4E-B598-9CD7567B4DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26169277-C67B-4B4E-B598-9CD7567B4DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26169277-C67B-4B4E-B598-9CD7567B4DDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
