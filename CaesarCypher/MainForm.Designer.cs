@@ -42,13 +42,14 @@
             this.cypherTextBox.Name = "cypherTextBox";
             this.cypherTextBox.Size = new System.Drawing.Size(776, 23);
             this.cypherTextBox.TabIndex = 0;
+            this.cypherTextBox.TabStop = false;
             // 
             // keyNumericUpDown
             // 
             this.keyNumericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.keyNumericUpDown.Location = new System.Drawing.Point(107, 47);
             this.keyNumericUpDown.Maximum = new decimal(new int[] {
-            25,
+            32,
             0,
             0,
             0});
@@ -56,6 +57,7 @@
             this.keyNumericUpDown.Size = new System.Drawing.Size(120, 23);
             this.keyNumericUpDown.TabIndex = 1;
             this.keyNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.keyNumericUpDown.ValueChanged += new System.EventHandler(this.keyNumericUpDown_ValueChanged);
             // 
             // decodeButton
             // 
@@ -71,12 +73,15 @@
             // 
             // plainTextBox
             // 
+            this.plainTextBox.BackColor = System.Drawing.SystemColors.Window;
             this.plainTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.plainTextBox.Location = new System.Drawing.Point(12, 80);
             this.plainTextBox.Multiline = true;
             this.plainTextBox.Name = "plainTextBox";
+            this.plainTextBox.ReadOnly = true;
             this.plainTextBox.Size = new System.Drawing.Size(776, 358);
             this.plainTextBox.TabIndex = 3;
+            this.plainTextBox.TabStop = false;
             // 
             // MainForm
             // 

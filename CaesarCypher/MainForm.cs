@@ -1,4 +1,7 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Globalization;
+using System.Text;
+using System.Windows.Forms;
 
 namespace CaesarCypher
 {
@@ -11,12 +14,32 @@ namespace CaesarCypher
 
         private void decodeButton_Click(object sender, System.EventArgs e)
         {
-            plainTextBox.Text = CaesarShift(cypherTextBox.Text, (int) keyNumericUpDown.Value);
+            var russianAlphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+
+            plainTextBox.Text = CaesarShift(cypherTextBox.Text, (int) keyNumericUpDown.Value, russianAlphabet);
         }
 
-        private string CaesarShift(string text, int shift)
+        private string CaesarShift(string text, int shift, string alphabet)
         {
-            return text + shift.ToString();
+            var result = new StringBuilder(text.Length);
+
+            foreach (var symbol in text)
+            {
+                var symbolIndex = alphabet.IndexOf(char.ToLower(symbol));
+
+                if (-1 == symbolIndex)
+                    result.Append(symbol);
+                else
+                    result.Append(alphabet[(symbolIndex + shift) % alphabet.Length]);
+            }
+
+
+            return result.ToString();
+        }
+
+        private void keyNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            decodeButton_Click(null, null);
         }
     }
 }
