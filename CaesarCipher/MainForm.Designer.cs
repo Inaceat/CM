@@ -1,4 +1,4 @@
-﻿namespace CaesarCypher
+﻿namespace CaesarCipher
 {
     partial class MainForm
     {
@@ -93,7 +93,7 @@
             this.Controls.Add(this.keyNumericUpDown);
             this.Controls.Add(this.cypherTextBox);
             this.Name = "MainForm";
-            this.Text = "Caesar\'s Cypher";
+            this.Text = "Caesar\'s Cipher";
             ((System.ComponentModel.ISupportInitialize)(this.keyNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CaesarCypher.Properties
+namespace CaesarCipher.Properties
 {
 
 

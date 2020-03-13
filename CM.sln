@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColumnarTransposition", "ColumnarTransposition\ColumnarTransposition.csproj", "{362F6C26-1AA0-47D5-BEE0-A3CEBA800B33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarCypher", "CaesarCypher\CaesarCypher.csproj", "{21862ADE-28F3-48AE-AE1D-79FD32D9D3E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaesarCipher", "CaesarCipher\CaesarCipher.csproj", "{21862ADE-28F3-48AE-AE1D-79FD32D9D3E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

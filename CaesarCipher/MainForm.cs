@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 
-namespace CaesarCypher
+namespace CaesarCipher
 {
     public partial class MainForm : Form
     {
