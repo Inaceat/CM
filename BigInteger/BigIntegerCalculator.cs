@@ -16,39 +16,98 @@ namespace BigInteger
         {
             InitializeComponent();
 
+            ResetPrimeLabel();
+        }
+
+
+        private void SetPrimeLabelTrue()
+        {
+            isPrimeLabel.ForeColor = Color.LightGreen;
+            isPrimeLabel.Text = "Maybe";
+        }
+        private void SetPrimeLabelFalse()
+        {
+            isPrimeLabel.ForeColor = Color.Red;
+            isPrimeLabel.Text = "No";
+        }
+        private void ResetPrimeLabel()
+        {
             isPrimeLabel.Text = "";
         }
 
 
         private void isPrimeButton_Click(object sender, EventArgs e)
         {
-            //Temp
-            if ("Yes" == isPrimeLabel.Text)
+            BigInteger number;
+
+            try
             {
-                isPrimeLabel.ForeColor = Color.Red;
-                isPrimeLabel.Text = "No";
+                number = new BigInteger(firstNumberTextBox.Text);
             }
+            catch (ArgumentException)
+            {
+                return;
+            }
+
+            if (number.IsComposite())
+                SetPrimeLabelFalse();
             else
-            {
-                isPrimeLabel.ForeColor = Color.Green;
-                isPrimeLabel.Text = "Yes";
-            }
+                SetPrimeLabelTrue();
         }
 
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            BigInteger first;
+            BigInteger second;
 
+            try
+            {
+                first = new BigInteger(firstNumberTextBox.Text);
+                second = new BigInteger(secondNumberTextBox.Text);
+            }
+            catch (ArgumentException)
+            {
+                return;
+            }
+
+            resultTextBox.Text = (first + second).ToString();
         }
 
         private void subtractButton_Click(object sender, EventArgs e)
         {
+            BigInteger first;
+            BigInteger second;
 
+            try
+            {
+                first = new BigInteger(firstNumberTextBox.Text);
+                second = new BigInteger(secondNumberTextBox.Text);
+            }
+            catch (ArgumentException)
+            {
+                return;
+            }
+
+            resultTextBox.Text = (first - second).ToString();
         }
 
         private void multiplyButton_Click(object sender, EventArgs e)
         {
+            BigInteger first;
+            BigInteger second;
 
+            try
+            {
+                first = new BigInteger(firstNumberTextBox.Text);
+                second = new BigInteger(secondNumberTextBox.Text);
+            }
+            catch (ArgumentException)
+            {
+                return;
+            }
+
+            resultTextBox.Text = (first * second).ToString();
         }
     }
 }

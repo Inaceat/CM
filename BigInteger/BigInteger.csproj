@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BigInteger.cs" />
     <Compile Include="BigIntegerCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
