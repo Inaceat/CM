@@ -46,6 +46,7 @@ namespace BigInteger
             }
             catch (ArgumentException)
             {
+                ResetPrimeLabel();
                 return;
             }
 
@@ -68,6 +69,7 @@ namespace BigInteger
             }
             catch (ArgumentException)
             {
+                resultTextBox.Text = "";
                 return;
             }
 
@@ -86,6 +88,7 @@ namespace BigInteger
             }
             catch (ArgumentException)
             {
+                resultTextBox.Text = "";
                 return;
             }
 
@@ -104,6 +107,7 @@ namespace BigInteger
             }
             catch (ArgumentException)
             {
+                resultTextBox.Text = "";
                 return;
             }
 
