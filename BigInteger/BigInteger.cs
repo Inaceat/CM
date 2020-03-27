@@ -1,12 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace BigInteger
 {
-    public struct BigInteger
+    public class BigInteger
     {
+        private static readonly Regex NumberRegex = new Regex(@"^(?:\+|-)?[0-9]+$");
+
         public BigInteger(string number)
         {
-            
+            if (!NumberRegex.IsMatch(number))
+                throw new ArgumentException();
+
+
         }
 
         public override string ToString()
@@ -29,6 +36,7 @@ namespace BigInteger
         {
             return left;
         }
+
 
         public bool IsComposite()
         {
